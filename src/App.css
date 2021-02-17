@@ -76,26 +76,20 @@
   text-decoration: none;
 }
 
-.mail,
-.linkedin,
-.github {
+.social-links {
   position: absolute;
-  top: 2rem;
+  top: 1.6rem;
+  display: flex;
+  right: 0;
 }
 
-.mail {
-  right: 5.5rem;
-}
-.linkedin {
-  right: 2.875rem;
-}
-.github {
-  right: 0.5rem;
+.social-links > a {
+  padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 
-.mail svg,
-.linkedin svg,
-.github svg {
+.social-links svg {
   width: 2rem;
   height: 2rem;
   color: white;
@@ -169,13 +163,6 @@ ul ul li {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     gap: 1.5rem;
-  }
-
-  .mail img,
-  .linkedin img,
-  .github img {
-    width: 2rem;
-    height: 2rem;
   }
 
   .mail {

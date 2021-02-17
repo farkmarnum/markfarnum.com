@@ -31,10 +31,11 @@ Run easterEgg() for a surprise.
         'background-image: url("https://media.giphy.com/media/aFTt8wvDtqKCQ/giphy.gif")',
         'background-size: cover',
         'color: #fff',
+        'font-weight: bold',
         'padding: 10px 20px',
         'line-height: 200px',
       ].join(';')
-      console.info('%c                 ', style)
+      console.info('%c    h i r e    m e    ', style)
     }
   }, [])
 
@@ -45,27 +46,29 @@ Run easterEgg() for a surprise.
         <div className="headertite">
           <code>mark farnum</code>
         </div>
-        <a
-          href="mailto:mark.farnum@gmail.com?subject=hi!"
-          {...newTabLink}
-          className="link-no-style mail"
-        >
-          <Mail />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mark-farnum/"
-          {...newTabLink}
-          className="link-no-style linkedin"
-        >
-          <Linkedin />
-        </a>
-        <a
-          href="https://github.com/farkmarnum"
-          {...newTabLink}
-          className="link-no-style github"
-        >
-          <Github />
-        </a>
+        <div className="social-links">
+          <a
+            href="mailto:mark.farnum@gmail.com?subject=hi!"
+            {...newTabLink}
+            className="link-no-style mail"
+          >
+            <Mail />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mark-farnum/"
+            {...newTabLink}
+            className="link-no-style linkedin"
+          >
+            <Linkedin />
+          </a>
+          <a
+            href="https://github.com/farkmarnum"
+            {...newTabLink}
+            className="link-no-style github"
+          >
+            <Github />
+          </a>
+        </div>
       </div>
       <div className="main container">
         <h1 className="text-center title">
