@@ -28,11 +28,7 @@ function App() {
         <div className="row content">
           <div>
             <h4>about</h4>
-            Hi!
-            <br />
-            I'm Mark.
-            <br />
-            I'm a software engineer.
+            Hi! I'm Mark. I'm a software engineer.
             <br />I love working in small, driven teams on ideas that matter.
           </div>
 
@@ -50,30 +46,27 @@ function App() {
                 </a>
               </h5>
             </div>
-            <div className="mt-1">
+            <div className="description">
               Ever been stuck on the subway, wondering if you should transfer at
-              the next station, but don't have service underground? With most
-              nav apps, you're out of luck until you get service again.
+              the next station, but don't have service underground?
+              <br />
+              Solution: a web app that gives users access to all the realtime
+              data of a transit system, as up to date as the last time they
+              opened the web app and had a connection.
               <div className="mt-1">
-                Solution: a web app that gives users access to{' '}
-                <strong>all</strong> the realtime data of a transit system, as
-                up to date as the last time they opened the web app and had a
-                connection.
+                View on{' '}
+                <a
+                  href="https://github.com/farkmarnum/transit_data_access"
+                  target="_blank"
+                  rel="noreferrer follow"
+                >
+                  GitHub
+                </a>
+                .
               </div>
-              <div className="mt-05">
-                Stack: Python, Node, React, Redis, ECS/Fargate
-              </div>
-              Check out the source on{' '}
-              <a
-                href="https://github.com/farkmarnum/transit_data_access"
-                target="_blank"
-                rel="noreferrer follow"
-              >
-                GitHub
-              </a>
             </div>
 
-            <div className="mt-2">
+            <div className="mt-3">
               <h5 style={{ display: 'inline' }}>
                 <a
                   href="https://emojify.net"
@@ -84,19 +77,37 @@ function App() {
                 </a>
               </h5>
             </div>
-            <div className="mt-1">
-              Ever been stuck on the subway, wondering if you should transfer at
-              the next station, but don't have service underground? With most
-              nav apps, you're out of luck until you get service again.
+            <div className="description">
+              Add emojis to your text! Algorithm trained on r/emojipasta
+              subreddit posts.
               <div className="mt-1">
-                Solution: a web app that gives users access to{' '}
-                <strong>all</strong> the realtime data of a transit system, as
-                up to date as the last time they opened the web app and had a
-                connection.
+                View on{' '}
+                <a
+                  href="https://github.com/farkmarnum/emojify"
+                  target="_blank"
+                  rel="noreferrer follow"
+                >
+                  GitHub
+                </a>
+                .
               </div>
-              <div className="mt-05">
-                Stack: Python, Node, React, Redis, ECS/Fargate
-              </div>
+            </div>
+
+            <div className="mt-3">
+              <h5 style={{ display: 'inline' }}>
+                <a
+                  href="https://github.com/farkmarnum/setup-domain-aws"
+                  target="_blank"
+                  rel="noreferrer follow"
+                >
+                  setup-domain-aws
+                </a>
+              </h5>
+            </div>
+            <div className="description">
+              Automate the tedious process of domain registration (AWS Route53),
+              certificate setup (AWS ACM), and config setup (GitHub Secrets /
+              AWS Secrets Manager).
             </div>
           </div>
 
@@ -113,19 +124,16 @@ function App() {
                   ViaHero
                 </a>
               </h5>{' '}
-              - <em>(former Senior Engineer)</em>
+              - <em>former Senior Engineer</em>
             </div>
-            <div className="mt-1">
+            <div className="description">
               ViaHero is an online marketplace for travelers to choose locals to
               plan their personalized trip. It's a brand new way to travel,
               perfect for those who want to travel independently and see a place
               through a local's eyes.
-              <div className="mt-05">
-                Stack: Node, React, ECS/Fargate, MongoDB
-              </div>
             </div>
 
-            <div className="mt-2">
+            <div className="mt-3">
               <h5 style={{ display: 'inline' }}>
                 <a
                   href="https://gospot.io"
@@ -135,13 +143,12 @@ function App() {
                   GoSpot
                 </a>
               </h5>{' '}
-              - <em>(current Engineer)</em>
+              - <em>current Engineer</em>
             </div>
-            <div className="mt-05">
+            <div className="description">
               GoSpot is a community-driven marketplace where property managers
               can list their outdoor spots, and guests can conveniently find and
               rent safe outdoor locations for gatherings and events.
-              <div className="mt-1">Stack: Node, React, ECS/Fargate, RDS</div>
             </div>
           </div>
         </div>

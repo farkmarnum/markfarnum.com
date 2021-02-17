@@ -6,7 +6,7 @@
 .headshot {
   position: absolute;
   top: 1.5rem;
-  left: 1.5rem;
+  left: 0.5rem;
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
@@ -53,31 +53,39 @@ a:hover {
 }
 
 h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
-
-  display: table; /* ...it works! 🤷‍♂️ */
-
-  padding: 0 0.25rem;
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--light-blue) 50%);
 }
 
 h5 {
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 h4, h5 {
-  font-size: 1.75rem;
   letter-spacing: normal;
+}
+h4 {
+  font-size: 1.75rem;
+}
+h5 {
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 550px) {
+  .headshot {
+    left: 1.5rem;
+  }
+
   .title {
     font-size: 2rem;
   }
 
-  h4, h5 {
+  h4 {
     font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.75rem;
   }
 }
 
@@ -86,7 +94,10 @@ h4, h5 {
     font-size: 2.5rem;
   }
 
-  h4, h5 {
+  h4 {
+    font-size: 2.5rem;
+  }
+  h5 {
     font-size: 2.25rem;
   }
 }
@@ -96,17 +107,24 @@ h4, h5 {
     font-size: 3rem;
   }
 
-  h4, h5 {
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
     font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 960px) {
   .main {
-    width: 100%;  /* overwrite .container */
+    width: 100%; /* overwrite .container */
     padding: 0;
   }
   .row {
-    padding: 0 0.5rem;
+    padding: 0 1.5rem;
   }
+}
+
+.description {
+  margin-top: 0.25rem;
 }

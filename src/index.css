@@ -4,6 +4,8 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  line-height: 1.5;
 }
 
 code {
@@ -17,6 +19,10 @@ code {
 :root {
   --blue: #2e86f9;
   --light-blue: #c4deff;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }
 
 .mt-2 {
