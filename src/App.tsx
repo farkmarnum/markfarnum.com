@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactTypingEffect from 'react-typing-effect'
 import './App.css'
 import titles from './helpers/titles'
@@ -13,7 +13,31 @@ const newTabLink = {
   rel: 'noreferrer follow',
 }
 
-function App() {
+interface Window {
+  easterEgg: () => void
+}
+
+declare const window: Window
+
+const App = (): JSX.Element => {
+  useEffect(() => {
+    console.info(`Hi!
+You made it to the console.
+Run easterEgg() for a surprise.
+`)
+
+    window.easterEgg = () => {
+      const style = [
+        'background-image: url("https://media.giphy.com/media/aFTt8wvDtqKCQ/giphy.gif")',
+        'background-size: cover',
+        'color: #fff',
+        'padding: 10px 20px',
+        'line-height: 200px',
+      ].join(';')
+      console.info('%c                 ', style)
+    }
+  }, [])
+
   return (
     <div>
       <div className="header">
@@ -85,12 +109,11 @@ function App() {
               </h5>
             </div>
             <div className="description">
-              Ever been stuck on the subway, wondering if you should transfer at
-              the next station, but don't have service underground?
-              <br />
-              Solution: a web app that gives users access to all the realtime
-              data of a transit system, as up to date as the last time they
-              opened the web app and had a connection.
+              Ever been stuck on the subway, not sure if you should transfer at
+              the next station, but don't have service underground? Access all
+              the realtime data of a transit system with Transit Data Access
+              (packed into tiny Protobuf updates), as up to date as the last
+              time you opened the web app and had a connection.
               <div className="mt-1">
                 View on{' '}
                 <a
@@ -170,10 +193,10 @@ function App() {
               - <em>former Senior Engineer</em>
             </div>
             <div className="description">
-              ViaHero is an online marketplace for travelers to choose locals to
-              plan their personalized trip. It's a brand new way to travel,
-              perfect for those who want to travel independently and see a place
-              through a local's eyes.
+              ViaHero is an online marketplace where travelers connect with
+              local residents to plan their personalized trip. It's a brand new
+              way to travel, perfect for those who want to travel independently
+              and see a place through a local's eyes.
             </div>
 
             <div className="mt-3">

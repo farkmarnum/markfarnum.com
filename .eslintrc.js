@@ -1,7 +1,14 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+  },
 
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'airbnb',
+    'prettier',
+    'prettier/react',
+  ],
 
   plugins: ['prettier'],
 
@@ -26,6 +33,13 @@ module.exports = {
       },
     ],
     'react/no-unescaped-entities': 'off',
+    'no-console': [
+      'error',
+      {
+        allow: ['warn', 'error', 'info'],
+      },
+    ],
+    'no-use-before-define': 'off',
   },
 
   settings: {
