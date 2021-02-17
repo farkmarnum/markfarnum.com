@@ -42,6 +42,12 @@
   margin-top: 4rem;
 }
 
+.footer {
+  height: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
 a, a:active, a:visited, a:focus {
   color: var(--blue);
   opacity: 1;
@@ -72,6 +78,30 @@ h5 {
   font-size: 1.5rem;
 }
 
+ul {
+  margin-left: 1rem;
+  margin-bottom: 0;
+  list-style: disc inside;
+}
+
+ul ul {
+  font-size: 100%;
+  margin: 0rem 0 0rem 2rem;
+  list-style: circle inside;
+}
+
+ul li {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+ul ul li {
+  font-weight: normal;
+  margin-top: 0;
+  opacity: 0.6;
+}
+
 @media screen and (min-width: 550px) {
   .headshot {
     left: 1.5rem;
@@ -79,6 +109,13 @@ h5 {
 
   .title {
     font-size: 2rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.5rem;
   }
 
   h4 {

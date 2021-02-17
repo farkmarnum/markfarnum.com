@@ -109,6 +109,9 @@ function App() {
               certificate setup (AWS ACM), and config setup (GitHub Secrets /
               AWS Secrets Manager).
             </div>
+            <div className="mt-1">
+              <code>npx setup-domain-aws help</code>
+            </div>
           </div>
 
           <div>
@@ -143,7 +146,7 @@ function App() {
                   GoSpot
                 </a>
               </h5>{' '}
-              - <em>current Engineer</em>
+              - <em>current Lead Engineer</em>
             </div>
             <div className="description">
               GoSpot is a community-driven marketplace where property managers
@@ -151,7 +154,101 @@ function App() {
               rent safe outdoor locations for gatherings and events.
             </div>
           </div>
+
+          <div style={{ marginTop: '6rem' }}>
+            <h4>skills</h4>
+            <div className="skills">
+              <div>
+                <ul>
+                  <li>Python</li>
+                  <ul>
+                    <li>Flask</li>
+                    <li>Django</li>
+                    <li>aiohttp</li>
+                    <li>pandas</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>CD/CI, IaC</li>
+                  <ul>
+                    <li>CloudFormation</li>
+                    <li>Terraform</li>
+                    <li>Serverless</li>
+                    <li>GitHub Actions</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>AWS</li>
+                  <ul>
+                    <li>ECS / Fargate / ECR</li>
+                    <li>Lambda, EC2</li>
+                    <li>S3, CloudFront, ELB</li>
+                    <li>Route53, ACM, IAM</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Javascript</li>
+                  <ul>
+                    <li>Typescript</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>React</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Other languages</li>
+                  <ul>
+                    <li>Rust</li>
+                    <li>Scheme</li>
+                    <li>Elixir</li>
+                    <li>Perl</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>DB</li>
+                  <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                  </ul>
+                </ul>
+              </div>
+              <div
+                style={{
+                  gridColumnStart: 1,
+                  gridColumnEnd: 4,
+                  marginTop: '1rem',
+                }}
+              >
+                <ul>
+                  <li>Soft Skills</li>
+                  <ul>
+                    <li>
+                      Communicate openly and effectively with technical and
+                      non-technical colleagues
+                    </li>
+                    <li>Find creative solutions and compromises</li>
+                    <li>Learn and adapt quickly</li>
+                    <li>Work consistently and dependably</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="footer">
+        &copy; Copyright Mark Farnum {new Date().getFullYear()}
       </div>
     </div>
   )
