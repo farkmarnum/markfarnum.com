@@ -1,0 +1,57 @@
+.headshot {
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+a.headshotlink:hover {
+  opacity: 1;
+}
+
+.header {
+  background-color: var(--blue);
+  height: 6rem;
+}
+
+.header code,
+.title code {
+  background: none;
+  border: none;
+}
+
+.headertite {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 550px) {
+  .headshot {
+    left: 1.5rem;
+  }
+}
+
+.social-links {
+  position: absolute;
+  top: 1.6rem;
+  display: flex;
+  right: 0;
+}
+
+.social-links > a {
+  padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.social-links svg {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}

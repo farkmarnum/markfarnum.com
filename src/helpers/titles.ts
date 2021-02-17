@@ -8,15 +8,16 @@ const shuffleArray = <T>(array: T[]): T[] => {
   return newArray
 }
 
-export default shuffleArray<string>([
-  'System.out.println("mark farnum")', // Java
-  'echo "mark farnum"', // bash
-  'printf("mark farnum");', // C
-  'std::cout << "mark farnum";', // C++
-  'io:fwrite("mark farnum")', // Erlang
-  'IO.puts "mark farnum"', // Elixir
-  'console.log("mark farnum")', // JS
-  '(print "mark farnum")', // Lisp
-  'print "mark farnum"', // Perl
-  'println!("mark farnum");', // Rust
-])
+export default (text: string): string[] =>
+  shuffleArray<string>([
+    `System.out.println("${text}")`, // Java
+    `echo "${text}"`, // bash
+    `printf("${text}");`, // C
+    `std::cout << "${text}";`, // C++
+    `io:fwrite("${text}")`, // Erlang
+    `IO.puts "${text}"`, // Elixir
+    `console.log("${text}")`, // JS
+    `(print "${text}")`, // Lisp
+    `print "${text}"`, // Perl
+    `println!("${text}");`, // Rust
+  ])

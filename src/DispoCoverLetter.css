@@ -1,0 +1,16 @@
+.cover-letter li {
+  font-weight: normal;
+}
+
+.cover-letter ol > li > ul > li {
+  font-size: 90%;
+  opacity: 1;
+}
+
+.cover-letter ol > li {
+  margin-top: 2rem;
+}
+
+.cover-letter ol > li > ul {
+  margin-top: 0.25rem;
+}

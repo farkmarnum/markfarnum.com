@@ -1,0 +1,40 @@
+.content > div:not(:first-child) {
+  margin-top: 4rem;
+}
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specialties > div {
+  /* background: var(--light-blue); */
+  background: var(--blue);
+  color: white;
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  margin: 0.75rem 0.75rem 0 0;
+}
+
+.description {
+  margin-top: 0.25rem;
+}
+
+.link-no-style,
+.link-no-style:active,
+.link-no-style:visited,
+.link-no-style:hover,
+.link-no-style:focus {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 550px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.5rem;
+  }
+}

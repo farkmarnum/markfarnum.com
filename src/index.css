@@ -38,6 +38,132 @@ code {
   margin-top: 0.5rem;
 }
 
+.title {
+  font-weight: lighter;
+  font-size: 1.75rem;
+  color: rgb(129, 129, 129);
+}
+
+.main {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.link-no-style,
+.link-no-style:active,
+.link-no-style:visited,
+.link-no-style:hover,
+.link-no-style:focus {
+  color: white;
+  text-decoration: none;
+}
+
+a, a:active, a:visited, a:focus {
+  color: var(--blue);
+  opacity: 1;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+h4, h5 {
+  letter-spacing: normal;
+}
+h4 {
+  font-size: 1.75rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+
+ul {
+  margin-left: 1rem;
+  margin-bottom: 0;
+  list-style: disc inside;
+}
+
+ul ul,
+ol ul {
+  font-size: 100%;
+  margin: 0rem 0 0rem 2rem;
+  list-style: circle inside;
+}
+
+ul li,
+ol li {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+ul ul li,
+ol ul li {
+  font-weight: normal;
+  margin-top: 0;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 550px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+  h5 {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    width: 100%; /* overwrite .container */
+    padding: 0;
+  }
+  .row {
+    padding: 0 1.5rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: white;
