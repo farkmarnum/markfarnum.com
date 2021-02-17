@@ -1,8 +1,17 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect'
 import './App.css'
 import titles from './helpers/titles'
 import headshot from './headshot-cropped.jpg'
+import Linkedin from './logo-linkedin'
+import Github from './logo-github'
+import Mail from './mail-outline'
+
+const newTabLink = {
+  target: '_blank',
+  rel: 'noreferrer follow',
+}
 
 function App() {
   return (
@@ -12,6 +21,27 @@ function App() {
         <div className="headertite">
           <code>mark farnum</code>
         </div>
+        <a
+          href="mailto:mark.farnum@gmail.com?subject=hi!"
+          {...newTabLink}
+          className="link-no-style mail"
+        >
+          <Mail />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mark-farnum/"
+          {...newTabLink}
+          className="link-no-style linkedin"
+        >
+          <Linkedin />
+        </a>
+        <a
+          href="https://github.com/farkmarnum"
+          {...newTabLink}
+          className="link-no-style github"
+        >
+          <Github />
+        </a>
       </div>
       <div className="main container">
         <h1 className="text-center title">
@@ -33,15 +63,23 @@ function App() {
           </div>
 
           <div>
+            <h4>specialties</h4>
+            <div className="specialties">
+              <div>startups</div>
+              <div>backend</div>
+              <div>AWS</div>
+              <div>python</div>
+              <div>node</div>
+              <div>react</div>
+            </div>
+          </div>
+
+          <div>
             <h4>projects</h4>
 
             <div>
               <h5 style={{ display: 'inline' }}>
-                <a
-                  href="https://wtfmta.info"
-                  target="_blank"
-                  rel="noreferrer follow"
-                >
+                <a href="https://wtfmta.info" {...newTabLink}>
                   transit data access
                 </a>
               </h5>
@@ -57,8 +95,7 @@ function App() {
                 View on{' '}
                 <a
                   href="https://github.com/farkmarnum/transit_data_access"
-                  target="_blank"
-                  rel="noreferrer follow"
+                  {...newTabLink}
                 >
                   GitHub
                 </a>
@@ -68,11 +105,7 @@ function App() {
 
             <div className="mt-3">
               <h5 style={{ display: 'inline' }}>
-                <a
-                  href="https://emojify.net"
-                  target="_blank"
-                  rel="noreferrer follow"
-                >
+                <a href="https://emojify.net" {...newTabLink}>
                   emojify
                 </a>
               </h5>
@@ -82,11 +115,7 @@ function App() {
               subreddit posts.
               <div className="mt-1">
                 View on{' '}
-                <a
-                  href="https://github.com/farkmarnum/emojify"
-                  target="_blank"
-                  rel="noreferrer follow"
-                >
+                <a href="https://github.com/farkmarnum/emojify" {...newTabLink}>
                   GitHub
                 </a>
                 .
@@ -97,8 +126,7 @@ function App() {
               <h5 style={{ display: 'inline' }}>
                 <a
                   href="https://github.com/farkmarnum/setup-domain-aws"
-                  target="_blank"
-                  rel="noreferrer follow"
+                  {...newTabLink}
                 >
                   setup-domain-aws
                 </a>
@@ -112,6 +140,22 @@ function App() {
             <div className="mt-1">
               <code>npx setup-domain-aws help</code>
             </div>
+
+            <div className="mt-3">
+              <h5 style={{ display: 'inline', color: 'var(--blue)' }}>
+                this website
+              </h5>
+            </div>
+            <div className="description">
+              Check it out on{' '}
+              <a
+                href="https://github.com/farkmarnum/markfarnum.com"
+                {...newTabLink}
+              >
+                GitHub
+              </a>
+              !
+            </div>
           </div>
 
           <div>
@@ -119,11 +163,7 @@ function App() {
 
             <div>
               <h5 style={{ display: 'inline' }}>
-                <a
-                  href="https://viahero.com"
-                  target="_blank"
-                  rel="noreferrer follow"
-                >
+                <a href="https://viahero.com" {...newTabLink}>
                   ViaHero
                 </a>
               </h5>{' '}
@@ -138,11 +178,7 @@ function App() {
 
             <div className="mt-3">
               <h5 style={{ display: 'inline' }}>
-                <a
-                  href="https://gospot.io"
-                  target="_blank"
-                  rel="noreferrer follow"
-                >
+                <a href="https://gospot.io" {...newTabLink}>
                   GoSpot
                 </a>
               </h5>{' '}
@@ -171,6 +207,28 @@ function App() {
               </div>
               <div>
                 <ul>
+                  <li>Javascript</li>
+                  <ul>
+                    <li>Typescript</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>React</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Other languages</li>
+                  <ul>
+                    <li>Rust</li>
+                    <li>Elixir</li>
+                    <li>Perl</li>
+                    <li>Scheme</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <ul>
                   <li>CD/CI, IaC</li>
                   <ul>
                     <li>CloudFormation</li>
@@ -188,28 +246,6 @@ function App() {
                     <li>Lambda, EC2</li>
                     <li>S3, CloudFront, ELB</li>
                     <li>Route53, ACM, IAM</li>
-                  </ul>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li>Javascript</li>
-                  <ul>
-                    <li>Typescript</li>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>React</li>
-                  </ul>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li>Other languages</li>
-                  <ul>
-                    <li>Rust</li>
-                    <li>Scheme</li>
-                    <li>Elixir</li>
-                    <li>Perl</li>
                   </ul>
                 </ul>
               </div>

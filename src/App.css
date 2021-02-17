@@ -42,10 +42,63 @@
   margin-top: 4rem;
 }
 
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specialties > div {
+  /* background: var(--light-blue); */
+  background: var(--blue);
+  color: white;
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  margin: 0.75rem 0.75rem 0 0;
+}
+
 .footer {
   height: 4rem;
   text-align: center;
   padding-top: 2rem;
+}
+
+.description {
+  margin-top: 0.25rem;
+}
+
+.link-no-style,
+.link-no-style:active,
+.link-no-style:visited,
+.link-no-style:hover,
+.link-no-style:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.mail,
+.linkedin,
+.github {
+  position: absolute;
+  top: 2rem;
+}
+
+.mail {
+  right: 5.5rem;
+}
+.linkedin {
+  right: 2.875rem;
+}
+.github {
+  right: 0.5rem;
+}
+
+.mail svg,
+.linkedin svg,
+.github svg {
+  width: 2rem;
+  height: 2rem;
+  color: white;
 }
 
 a, a:active, a:visited, a:focus {
@@ -118,6 +171,23 @@ ul ul li {
     gap: 1.5rem;
   }
 
+  .mail img,
+  .linkedin img,
+  .github img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .mail {
+    right: 8rem;
+  }
+  .linkedin {
+    right: 4.5rem;
+  }
+  .github {
+    right: 1rem;
+  }
+
   h4 {
     font-size: 2rem;
   }
@@ -160,8 +230,4 @@ ul ul li {
   .row {
     padding: 0 1.5rem;
   }
-}
-
-.description {
-  margin-top: 0.25rem;
 }
