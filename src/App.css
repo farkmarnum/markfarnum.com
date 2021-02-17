@@ -1,3 +1,112 @@
+.header {
+  background-color: var(--blue);
+  height: 6rem;
+}
+
+.headshot {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.title {
+  font-weight: lighter;
+  font-size: 1.75rem;
+  color: rgb(129, 129, 129);
+}
+
+.header code,
+.title code {
+  background: none;
+  border: none;
+}
+
+.headertite {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
 .main {
-  margin-top: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.content > div:not(:first-child) {
+  margin-top: 4rem;
+}
+
+a, a:active, a:visited, a:focus {
+  color: var(--blue);
+  opacity: 1;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+
+  display: table; /* ...it works! 🤷‍♂️ */
+
+  padding: 0 0.25rem;
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--light-blue) 50%);
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
+h4, h5 {
+  font-size: 1.75rem;
+  letter-spacing: normal;
+}
+
+@media screen and (min-width: 550px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  h4, h5 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  h4, h5 {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  h4, h5 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    width: 100%;  /* overwrite .container */
+    padding: 0;
+  }
+  .row {
+    padding: 0 0.5rem;
+  }
 }

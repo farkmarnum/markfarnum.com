@@ -25,6 +25,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'react/no-unescaped-entities': 'off',
   },
 
   settings: {
@@ -36,5 +37,17 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       },
     },
+  },
+  globals: {
+    React: true,
+    google: true,
+    mount: true,
+    mountWithRouter: true,
+    shallow: true,
+    shallowWithRouter: true,
+    context: true,
+    expect: true,
+    jsdom: true,
+    JSX: true,
   },
 }
