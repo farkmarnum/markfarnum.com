@@ -1,15 +1,20 @@
 .headshot {
+  width: 100%;
+  height: 100%;
+}
+
+.headshotlink,
+.headshotlink:focus,
+.headshotlink:active,
+.headshotlink:hover {
   position: absolute;
   top: 1.5rem;
   left: 0.5rem;
-  width: 9rem;
-  height: 9rem;
+  width: calc(9rem + 4px);
+  height: calc(9rem + 4px);
   border-radius: 50%;
   border: 2px solid white;
-}
-
-a.headshotlink:hover {
-  opacity: 1;
+  overflow: hidden;
 }
 
 .header {
@@ -23,16 +28,19 @@ a.headshotlink:hover {
   border: none;
 }
 
-.headertite {
+.headertitle {
   font-size: 2rem;
-  padding-top: 1.5rem;
+  padding-top: 1.8rem;
   text-align: center;
   color: white;
   font-weight: bold;
 }
 
 @media screen and (min-width: 550px) {
-  .headshot {
+  .headshotlink,
+  .headshotlink:focus,
+  .headshotlink:active,
+  .headshotlink:hover {
     left: 1.5rem;
   }
 }

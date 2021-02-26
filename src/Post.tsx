@@ -22,8 +22,6 @@ const Post = ({
   }>({})
   const [isLoading, setIsLoading] = useState(true)
 
-  console.info(postData)
-
   useEffect(() => {
     ;(async () => {
       try {

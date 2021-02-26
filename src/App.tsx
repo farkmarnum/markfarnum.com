@@ -11,6 +11,11 @@ declare const window: {
 
 export default (): JSX.Element => {
   const [title, setTitle] = useState('')
+  useEffect(() => {
+    if (title) {
+      document.title = title
+    }
+  }, [title])
 
   useEffect(() => {
     console.info(`Hi!
@@ -33,8 +38,8 @@ Run easterEgg() for a surprise.
 
   return (
     <div>
-      <Header title={title} />
       <Router>
+        <Header title={title} />
         <Switch>
           <Route path="/:slug">
             <Post setTitle={setTitle} />
