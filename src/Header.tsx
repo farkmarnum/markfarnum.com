@@ -10,7 +10,7 @@ import './Header.css'
 export default ({ title }: { title: string }): JSX.Element => (
   <div className="header">
     <a href="/" className="headshotlink">
-      <img src={headshot} alt="" className="headshot" />
+      <img src={headshot} alt="homepage" className="headshot" />
     </a>
     <div className="headertite">
       <code>{title}</code>
