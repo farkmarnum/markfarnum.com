@@ -18,6 +18,8 @@ module.exports = {
 
   rules: {
     'prettier/prettier': 'error',
+    'no-extra-semi': 'off',
+    '@typescript-eslint/no-extra-semi': 'off',
     'react/jsx-filename-extension': [
       'error',
       { extensions: ['.js', '.ts', '.jsx', '.tsx'] },

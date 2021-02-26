@@ -7,13 +7,13 @@ import Github from './logo-github'
 import Mail from './mail-outline'
 import './Header.css'
 
-export default (): JSX.Element => (
+export default ({ title }: { title: string }): JSX.Element => (
   <div className="header">
     <a href="/" className="headshotlink">
       <img src={headshot} alt="" className="headshot" />
     </a>
     <div className="headertite">
-      <code>mark farnum</code>
+      <code>{title}</code>
     </div>
     <div className="social-links">
       <a

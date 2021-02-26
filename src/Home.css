@@ -1,4 +1,4 @@
-.content > div:not(:first-child) {
+.content:not(.post-content) > div:not(:first-child) {
   margin-top: 4rem;
 }
 

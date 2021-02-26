@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 import Home from './Home'
-import DispoCoverLetter from './DispoCoverLetter'
+import Post from './Post'
 
 declare const window: {
   easterEgg: () => void
 }
 
 export default (): JSX.Element => {
+  const [title, setTitle] = useState('')
+
   useEffect(() => {
     console.info(`Hi!
 You made it to the console.
@@ -31,14 +33,14 @@ Run easterEgg() for a surprise.
 
   return (
     <div>
-      <Header />
+      <Header title={title} />
       <Router>
         <Switch>
-          <Route path="/dispo">
-            <DispoCoverLetter />
+          <Route path="/:slug">
+            <Post setTitle={setTitle} />
           </Route>
           <Route path="/">
-            <Home />
+            <Home setTitle={setTitle} />
           </Route>
         </Switch>
       </Router>
