@@ -39,10 +39,13 @@ const Home = ({
           <div className="specialties">
             <div>startups</div>
             <div>backend</div>
+            <div>frontend</div>
             <div>AWS</div>
-            <div>python</div>
             <div>node</div>
             <div>react</div>
+            <div>typescript</div>
+            <div>python</div>
+            <div>ruby</div>
           </div>
         </div>
 
@@ -50,31 +53,6 @@ const Home = ({
           <h4>projects</h4>
 
           <div>
-            <h5 style={{ display: 'inline' }}>
-              <a href="https://wtfmta.info" {...newTabLink}>
-                transit data access
-              </a>
-            </h5>
-          </div>
-          <div className="description">
-            Ever been stuck on the subway, not sure if you should transfer at
-            the next station, but don't have service underground? Access all the
-            realtime data of a transit system with Transit Data Access (packed
-            into tiny Protobuf updates), as up to date as the last time you
-            opened the web app and had a connection.
-            <div className="mt-1">
-              View on{' '}
-              <a
-                href="https://github.com/farkmarnum/transit_data_access"
-                {...newTabLink}
-              >
-                GitHub
-              </a>
-              .
-            </div>
-          </div>
-
-          <div className="mt-3">
             <h5 style={{ display: 'inline' }}>
               <a href="https://emojify.net" {...newTabLink}>
                 emojify
@@ -87,6 +65,29 @@ const Home = ({
             <div className="mt-1">
               View on{' '}
               <a href="https://github.com/farkmarnum/emojify" {...newTabLink}>
+                GitHub
+              </a>
+              .
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <h5 style={{ display: 'inline' }}>
+              <a href="https://badpasswordrules.com" {...newTabLink}>
+                bad password rules
+              </a>
+            </h5>
+          </div>
+          <div className="description">
+            Some websites have terrible password requirements. This website has
+            the worst. It takes an adversarial approach — every time you manage
+            to satisfy all the existing password rules, it adds a new one.
+            <div className="mt-1">
+              View on{' '}
+              <a
+                href="https://github.com/farkmarnum/bad-password-rules"
+                {...newTabLink}
+              >
                 GitHub
               </a>
               .
@@ -114,6 +115,29 @@ const Home = ({
 
           <div className="mt-3">
             <h5 style={{ display: 'inline', color: 'var(--blue)' }}>
+              transit data access
+            </h5>
+          </div>
+          <div className="description">
+            Ever been stuck on the subway, not sure if you should transfer at
+            the next station, but don't have service underground? Access all the
+            realtime data of a transit system with Transit Data Access (packed
+            into tiny Protobuf updates), as up to date as the last time you
+            opened the web app and had a connection.
+            <div className="mt-1">
+              View on{' '}
+              <a
+                href="https://github.com/farkmarnum/transit_data_access"
+                {...newTabLink}
+              >
+                GitHub
+              </a>
+              .
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <h5 style={{ display: 'inline', color: 'var(--blue)' }}>
               this website
             </h5>
           </div>
@@ -134,6 +158,21 @@ const Home = ({
 
           <div>
             <h5 style={{ display: 'inline' }}>
+              <a href="https://nayya.com" {...newTabLink}>
+                Nayya
+              </a>
+            </h5>{' '}
+            - <em>current Software Engineering Manager</em>
+          </div>
+          <div className="description">
+            Giving Americans peace on their best days, and confidence on their
+            worst. Our purpose is to help every American, regardless of race,
+            gender, sexual orientation, or socio-economic standing, to achieve
+            the health and financial potential that they deserve.
+          </div>
+
+          <div className="mt-3">
+            <h5 style={{ display: 'inline' }}>
               <a href="https://viahero.com" {...newTabLink}>
                 ViaHero
               </a>
@@ -153,7 +192,7 @@ const Home = ({
                 GoSpot
               </a>
             </h5>{' '}
-            - <em>current Lead Engineer</em>
+            - <em>former Lead Engineer</em>
           </div>
           <div className="description">
             GoSpot is a community-driven marketplace where property managers can

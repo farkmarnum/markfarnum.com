@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
 import Header from './Header'
 import Footer from './Footer'
 import Home from './Home'
 import Post from './Post'
+
+import shiba from './assets/shiba.gif'
+import toDataURL from './helpers/toDataURL'
 
 declare const window: {
   easterEgg: () => void
@@ -24,15 +28,21 @@ Run easterEgg() for a surprise.
 `)
 
     window.easterEgg = () => {
-      const style = [
-        'background-image: url("https://media.giphy.com/media/aFTt8wvDtqKCQ/giphy.gif")',
-        'background-size: cover',
-        'color: #fff',
-        'font-weight: bold',
-        'padding: 10px 20px',
-        'line-height: 200px',
-      ].join(';')
-      console.info('%c    h i r e    m e    ', style)
+      toDataURL(shiba, (res) => {
+        const style = [
+          `background-image: url("${res}")`,
+          'background-size: cover',
+          'color: white',
+          'text-shadow: 0 0 4px #000',
+          'font-weight: bold',
+          'padding: 10px 20px',
+          'line-height: 200px',
+        ].join(';')
+
+        console.info('%cthe climate is dying', style)
+
+        console.info('https://www.climateemergencyfund.org/')
+      })
     }
   }, [])
 

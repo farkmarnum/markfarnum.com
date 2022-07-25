@@ -2,11 +2,15 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { newTabLink } from './helpers/react'
-import headshot from './headshot-cropped.jpg'
-import Linkedin from './logo-linkedin'
-import Github from './logo-github'
-import Mail from './mail-outline'
+import headshot from './assets/headshot-cropped.jpg'
+import LinkedinIcon from './assets/logo-linkedin.svg'
+import GithubIcon from './assets/logo-github.svg'
+import MailIcon from './assets/mail-outline.svg'
 import './Header.css'
+
+const Linkedin = () => <img src={LinkedinIcon} alt="Linkedin" />
+const Github = () => <img src={GithubIcon} alt="Github" />
+const Mail = () => <img src={MailIcon} alt="Mail" />
 
 export default ({ title }: { title: string }): JSX.Element => {
   const history = useHistory()
