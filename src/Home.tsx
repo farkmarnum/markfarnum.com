@@ -162,7 +162,7 @@ const Home = ({
                 Nayya
               </a>
             </h5>{' '}
-            - <em>current Software Engineering Manager</em>
+            - <em>current Senior Software Engineer, Software Engineering Manager</em>
           </div>
           <div className="description">
             Giving Americans peace on their best days, and confidence on their
