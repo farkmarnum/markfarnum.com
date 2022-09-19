@@ -30,8 +30,8 @@ const Home = ({
       <div className="row content">
         <div>
           <h4>about</h4>
-          Hi! I'm Mark. I'm a software engineer.
-          <br />I love working in small, driven teams on ideas that matter.
+          Hi! I'm Mark. I'm a software engineer. I love working in small, driven
+          teams on ideas that matter.
         </div>
 
         <div>
@@ -53,25 +53,6 @@ const Home = ({
           <h4>projects</h4>
 
           <div>
-            <h5 style={{ display: 'inline' }}>
-              <a href="https://emojify.net" {...newTabLink}>
-                emojify
-              </a>
-            </h5>
-          </div>
-          <div className="description">
-            Add emojis to your text! Algorithm trained on r/emojipasta subreddit
-            posts.
-            <div className="mt-1">
-              View on{' '}
-              <a href="https://github.com/farkmarnum/emojify" {...newTabLink}>
-                GitHub
-              </a>
-              .
-            </div>
-          </div>
-
-          <div className="mt-3">
             <h5 style={{ display: 'inline' }}>
               <a href="https://badpasswordrules.com" {...newTabLink}>
                 bad password rules
@@ -111,6 +92,39 @@ const Home = ({
           </div>
           <div className="mt-1">
             <code>npx setup-domain-aws help</code>
+          </div>
+
+          <div className="mt-3">
+            <h5 style={{ display: 'inline' }}>
+              <a href="https://emojify.net" {...newTabLink}>
+                emojify
+              </a>
+            </h5>
+          </div>
+          <div className="description">
+            Add emojis to your text! Algorithm trained on r/emojipasta subreddit
+            posts.
+            <div className="mt-1">
+              View on{' '}
+              <a href="https://github.com/farkmarnum/emojify" {...newTabLink}>
+                GitHub
+              </a>
+              .
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <h5 style={{ display: 'inline' }}>
+              <a href="https://thaas.io" {...newTabLink}>
+                thaas
+              </a>
+            </h5>
+          </div>
+          <div className="description">
+            Tom Hanks As A Service. API, Slack app, and GitHub App.{' '}
+            <div className="mt-1">
+              <code>!thaas</code>
+            </div>
           </div>
 
           <div className="mt-3">
