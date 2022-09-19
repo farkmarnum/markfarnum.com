@@ -45,7 +45,7 @@ const Home = ({
             <div>react</div>
             <div>typescript</div>
             <div>python</div>
-            <div>ruby</div>
+            <div>terraform</div>
           </div>
         </div>
 
@@ -177,7 +177,7 @@ const Home = ({
                 ViaHero
               </a>
             </h5>{' '}
-            - <em>former Senior Engineer</em>
+            - <em>Senior Engineer</em>
           </div>
           <div className="description">
             ViaHero is an online marketplace where travelers connect with local
@@ -192,7 +192,7 @@ const Home = ({
                 GoSpot
               </a>
             </h5>{' '}
-            - <em>former Lead Engineer</em>
+            - <em>Lead Engineer</em>
           </div>
           <div className="description">
             GoSpot is a community-driven marketplace where property managers can
@@ -241,10 +241,11 @@ const Home = ({
               <ul>
                 <li>CD/CI, IaC</li>
                 <ul>
-                  <li>CloudFormation</li>
                   <li>Terraform</li>
-                  <li>Serverless</li>
+                  <li>Pulumi</li>
                   <li>GitHub Actions</li>
+                  <li>Serverless</li>
+                  <li>CloudFormation</li>
                 </ul>
               </ul>
             </div>
@@ -264,6 +265,7 @@ const Home = ({
                 <li>DB</li>
                 <ul>
                   <li>MySQL</li>
+                  <li>POstgres</li>
                   <li>MongoDB</li>
                   <li>Redis</li>
                 </ul>
