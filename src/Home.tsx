@@ -172,6 +172,19 @@ const Home = ({
 
           <div>
             <h5 style={{ display: 'inline' }}>
+              <a href="https://glean.io" {...newTabLink}>
+                Glean
+              </a>
+            </h5>{' '}
+            - <em>Software Engineer</em>
+          </div>
+          <div className="description">
+            Glean.io is a lightweight data analysis and visualization tool that
+            connects directly to your data warehouse.
+          </div>
+
+          <div className="mt-3">
+            <h5 style={{ display: 'inline' }}>
               <a href="https://nayya.com" {...newTabLink}>
                 Nayya
               </a>
