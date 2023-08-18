@@ -233,23 +233,23 @@ const Home = ({
           <div className="skills">
             <div>
               <ul>
-                <li>Python</li>
+                <li>Javascript</li>
                 <ul>
-                  <li>Flask</li>
-                  <li>Django</li>
-                  <li>aiohttp</li>
-                  <li>pandas</li>
+                  <li>Typescript</li>
+                  <li>NodeJS</li>
+                  <li>Express</li>
+                  <li>React</li>
                 </ul>
               </ul>
             </div>
             <div>
               <ul>
-                <li>Javascript</li>
+                <li>Python</li>
                 <ul>
-                  <li>Typescript</li>
-                  <li>Node</li>
-                  <li>Express</li>
-                  <li>React</li>
+                  <li>Flask</li>
+                  <li>Django</li>
+                  <li>asyncio</li>
+                  <li>pandas</li>
                 </ul>
               </ul>
             </div>
@@ -292,7 +292,7 @@ const Home = ({
                 <li>DB</li>
                 <ul>
                   <li>MySQL</li>
-                  <li>POstgres</li>
+                  <li>Postgres</li>
                   <li>MongoDB</li>
                   <li>Redis</li>
                 </ul>
