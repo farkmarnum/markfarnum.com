@@ -35,6 +35,9 @@ module.exports = {
       },
     ],
     'react/no-unescaped-entities': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/require-default-props': 'off',
+    'import/prefer-default-export': 'off',
     'no-console': [
       'error',
       {
