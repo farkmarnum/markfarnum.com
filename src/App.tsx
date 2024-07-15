@@ -1,17 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Header from './Header'
 import Footer from './Footer'
 import Home from './Home'
-import Post from './Post'
 
 import shiba from './assets/shiba.gif'
 import toDataURL from './helpers/toDataURL'
-
-declare const window: {
-  easterEgg: () => void
-}
 
 export default (): JSX.Element => {
   const [title, setTitle] = useState('')
@@ -50,16 +45,18 @@ Run easterEgg() for a surprise.
     <div>
       <Router>
         <Header title={title} />
-        <Switch>
-          <Route path="/:slug">
-            <Post setTitle={setTitle} />
-          </Route>
-          <Route path="/">
-            <Home setTitle={setTitle} />
-          </Route>
-        </Switch>
+
+        <Route path="/">
+          <Home setTitle={setTitle} />
+        </Route>
       </Router>
       <Footer />
     </div>
   )
+}
+
+declare global {
+  interface Window {
+    easterEgg: () => void
+  }
 }
